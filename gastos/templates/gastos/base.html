@@ -58,11 +58,94 @@
         {% endblock %}
     </main>
 
-    <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
-        <div class="max-w-7xl mx-auto container-padding">
-            <p>Easy Cash - Juan José Muñoz Jurado</p>
+    <!-- ===== FOOTER CRÉDITOS ===== -->
+    <style>
+        .creator-footer {
+            padding: 40px 20px;
+            background: rgba(10, 10, 10, 0.95);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            position: relative;
+            z-index: 40;
+        }
+
+        .dev-container {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .dev-label {
+            font-family: inherit;
+            font-size: 12px;
+            color: #929292;
+            opacity: 0.5;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .dev-profile {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px 25px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .dev-profile:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .dev-logo {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #22d3ee;
+        }
+
+        .dev-text {
+            text-align: left;
+        }
+
+        .dev-name {
+            font-family: inherit;
+            color: #ffffff;
+            font-size: 18px;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .dev-role {
+            font-family: inherit;
+            color: #929292;
+            font-size: 11px;
+            display: block;
+            opacity: 0.7;
+        }
+    </style>
+    <div class="creator-footer">
+        <div class="dev-container">
+            <span class="dev-label">Designed by</span>
+            <div class="dev-profile">
+                <!-- Asegúrate de que la ruta de la imagen funcione desde donde lo vayas a pegar -->
+                <img src="calculadora-jmas/MJ.png" alt="Logo Juan José Muñoz" class="dev-logo">
+                <div class="dev-text">
+                    <h4 class="dev-name">MJ</h4>
+                    <span class="dev-role">by Juan José Muñoz Jurado</span>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
 
     <script>
         // Script para manejar el menú desplegable de "Reportes" en dispositivos táctiles
