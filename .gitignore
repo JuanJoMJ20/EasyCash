@@ -1,0 +1,16 @@
+# Caches e archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+env/
+venv/
+.venv/
+ENV/
+
+# Variables de entorno
+.env
+
+# Archivos de base de datos SQLite (es mejor no subirlos para evitar sobreescribir datos en produccion)
+db.sqlite3
