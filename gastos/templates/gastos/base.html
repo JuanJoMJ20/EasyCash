@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -162,7 +163,7 @@
             <span class="dev-label">Designed by</span>
             <div class="dev-profile">
                 <!-- Asegúrate de que la ruta de la imagen funcione desde donde lo vayas a pegar -->
-                <img src="MJlogob.png" alt="Logo Juan José Muñoz" class="dev-logo">
+                <img src="{% static 'gastos/MJlogob.png' %}" alt="Logo Juan José Muñoz" class="dev-logo">
                 <div class="dev-text">
                     <h4 class="dev-name">MJ</h4>
                     <span class="dev-role">by Juan José Muñoz Jurado</span>
