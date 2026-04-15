@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,44 +10,67 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Gris claro de fondo */
+            background-color: #f3f4f6;
+            /* Gris claro de fondo */
         }
+
         /* Estilos personalizados para la aplicación */
         .container-padding {
-            padding-left: 1rem; /* p-4 */
-            padding-right: 1rem; /* p-4 */
+            padding-left: 1rem;
+            /* p-4 */
+            padding-right: 1rem;
+            /* p-4 */
         }
-        @media (min-width: 640px) { /* sm: */
+
+        @media (min-width: 640px) {
+
+            /* sm: */
             .container-padding {
-                padding-left: 2rem; /* sm:p-8 */
-                padding-right: 2rem; /* sm:p-8 */
+                padding-left: 2rem;
+                /* sm:p-8 */
+                padding-right: 2rem;
+                /* sm:p-8 */
             }
         }
-        @media (min-width: 1024px) { /* lg: */
+
+        @media (min-width: 1024px) {
+
+            /* lg: */
             .container-padding {
-                padding-left: 4rem; /* lg:p-16 */
-                padding-right: 4rem; /* lg:p-16 */
+                padding-left: 4rem;
+                /* lg:p-16 */
+                padding-right: 4rem;
+                /* lg:p-16 */
             }
         }
     </style>
 </head>
+
 <body class="min-h-screen flex flex-col">
     <nav class="bg-gradient-to-r from-red-800 to-gray-900 p-4 shadow-lg">
         <div class="max-w-7xl mx-auto flex justify-between items-center container-padding">
-            <a href="{% url 'gastos:dashboard' %}" class="text-white text-3xl font-bold tracking-tight rounded-md px-3 py-1 hover:bg-blue-700 transition duration-300">
+            <a href="{% url 'gastos:dashboard' %}"
+                class="text-white text-3xl font-bold tracking-tight rounded-md px-3 py-1 hover:bg-blue-700 transition duration-300">
                 Easy Cash
             </a>
             <div class="space-x-4 flex items-center">
-                <a href="{% url 'gastos:dashboard' %}" class="text-white text-lg font-medium hover:text-blue-200 transition duration-300 rounded-md px-3 py-2 hover:bg-blue-700">Dashboard</a>
-                <a href="{% url 'gastos:lista_transacciones' %}" class="text-white text-lg font-medium hover:text-blue-200 transition duration-300 rounded-md px-3 py-2 hover:bg-blue-700">Transacciones</a>
-                <a href="{% url 'gastos:lista_categorias' %}" class="text-white text-lg font-medium hover:text-blue-200 transition duration-300 rounded-md px-3 py-2 hover:bg-blue-700">Categorías</a>
+                <a href="{% url 'gastos:dashboard' %}"
+                    class="text-white text-lg font-medium hover:text-blue-200 transition duration-300 rounded-md px-3 py-2 hover:bg-blue-700">Dashboard</a>
+                <a href="{% url 'gastos:lista_transacciones' %}"
+                    class="text-white text-lg font-medium hover:text-blue-200 transition duration-300 rounded-md px-3 py-2 hover:bg-blue-700">Transacciones</a>
+                <a href="{% url 'gastos:lista_categorias' %}"
+                    class="text-white text-lg font-medium hover:text-blue-200 transition duration-300 rounded-md px-3 py-2 hover:bg-blue-700">Categorías</a>
                 <div class="relative group">
-                    <button class="text-white text-lg font-medium hover:text-blue-200 transition duration-300 rounded-md px-3 py-2 hover:bg-blue-700 focus:outline-none">
+                    <button
+                        class="text-white text-lg font-medium hover:text-blue-200 transition duration-300 rounded-md px-3 py-2 hover:bg-blue-700 focus:outline-none">
                         Reportes
                     </button>
-                    <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 invisible group-hover:visible group-focus-within:visible">
-                        <a href="{% url 'gastos:reporte_mensual' %}" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Reporte Mensual</a>
-                        <a href="{% url 'gastos:reporte_por_categoria' %}" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Reporte por Categoría</a>
+                    <div
+                        class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 invisible group-hover:visible group-focus-within:visible">
+                        <a href="{% url 'gastos:reporte_mensual' %}"
+                            class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Reporte Mensual</a>
+                        <a href="{% url 'gastos:reporte_por_categoria' %}"
+                            class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Reporte por Categoría</a>
                     </div>
                 </div>
             </div>
@@ -138,7 +162,7 @@
             <span class="dev-label">Designed by</span>
             <div class="dev-profile">
                 <!-- Asegúrate de que la ruta de la imagen funcione desde donde lo vayas a pegar -->
-                <img src="calculadora-jmas/MJ.png" alt="Logo Juan José Muñoz" class="dev-logo">
+                <img src="MJlogob.png" alt="Logo Juan José Muñoz" class="dev-logo">
                 <div class="dev-text">
                     <h4 class="dev-name">MJ</h4>
                     <span class="dev-role">by Juan José Muñoz Jurado</span>
@@ -149,12 +173,12 @@
 
     <script>
         // Script para manejar el menú desplegable de "Reportes" en dispositivos táctiles
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const reportesButton = document.querySelector('.relative.group button');
             const dropdown = document.querySelector('.relative.group .absolute');
 
             // Activar o desactivar la visibilidad del menú desplegable al hacer clic en el botón
-            reportesButton.addEventListener('click', function(event) {
+            reportesButton.addEventListener('click', function (event) {
                 event.stopPropagation(); // Prevent document click from closing it immediately
                 dropdown.classList.toggle('opacity-0');
                 dropdown.classList.toggle('invisible');
@@ -162,7 +186,7 @@
             });
 
             // Cerrar el menú desplegable al hacer clic fuera
-            document.addEventListener('click', function(event) {
+            document.addEventListener('click', function (event) {
                 if (!reportesButton.contains(event.target) && !dropdown.contains(event.target)) {
                     dropdown.classList.add('opacity-0');
                     dropdown.classList.add('invisible');
@@ -172,4 +196,5 @@
         });
     </script>
 </body>
+
 </html>
